@@ -2,7 +2,7 @@
 
 public class Gaji{
     public static int masaKerja;
-    static int GajiPokok(){
+    static int Gaji(){
         int gajiPokok;
         if (masaKerja<5) {
             gajiPokok=5000000;
@@ -13,7 +13,7 @@ public class Gaji{
         }
         return gajiPokok;
     }
-    static int GajiLembur(int jamLembur){
+    static int Lembur(int jamLembur){
         int gajiLembur;
         if (masaKerja<5) {
             gajiLembur=jamLembur*40000;
@@ -31,8 +31,8 @@ public class Gaji{
         int jamLembur = input.nextInt();
 
         /* Pekerjaan anda mulai dari sini */
-        int gajiPokok = GajiPokok();
-        int gajiLembur = GajiLembur(jamLembur);
+        int gajiPokok = Gaji();
+        int gajiLembur = Lembur(jamLembur);
         int totalGaji = gajiPokok + gajiLembur;
         System.out.println(totalGaji);
         /* Pekerjaan anda berakhir sini */

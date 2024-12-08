@@ -6,7 +6,7 @@ public class Gaji{
         double gajiPokok;
         if (masaKerja<5) {
             gajiPokok=5000000;
-        }else if (masaKerja >=5 || masaKerja<10) {
+        }else if (masaKerja >=5 && masaKerja<10) {
             gajiPokok=7500000;
         }else{
             gajiPokok=10000000;
@@ -17,7 +17,7 @@ public class Gaji{
         double gajiLembur;
         if (masaKerja<5) {
             gajiLembur=jamLembur*40000;
-        }else if (masaKerja>=5 || masaKerja <10) {
+        }else if (masaKerja>=5 && masaKerja <10) {
             gajiLembur=jamLembur*50000;
         }else{
             gajiLembur=jamLembur*75000;
